@@ -1,0 +1,10 @@
+.tudo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo{
+  color:black;
+  font-size: 100;
+}
