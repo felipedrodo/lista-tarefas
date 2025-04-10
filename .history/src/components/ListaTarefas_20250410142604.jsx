@@ -52,7 +52,6 @@ function ListaTarefas() {
             <h2 className="subtitulo">Lista de Tarefas</h2>
 
             <div className="formulario">
-                {/*nesse input ele recebe o valor da variável tarefa*/}
                 <input
                     className="entrada"
                     type="text"
@@ -60,7 +59,6 @@ function ListaTarefas() {
                     onChange={(e) => setNovaTarefa(e.target.value)}
                     placeholder="Digite uma nova tarefa"
                 />
-                {/*nesse input ele recebe o valor da variável tarefa*/}
                 <input
                     className="entrada"
                     type="text"
@@ -68,10 +66,9 @@ function ListaTarefas() {
                     onChange={(e) => setNovaData(e.target.value)}
                     placeholder="Digite a data de entrega:"
                 />
-                {/*esse botão adiciona a tarefa e a data de entrega*/}
                 <button className="botaoAdd" onClick={adicionarTarefa}>Adicionar</button>
             </div>
-            {/*aqui ele recebe o tipo de ordenação que a pessoa escolher*/}
+
             <div className="ordenacao">
                 <label htmlFor="ordenacao">Ordenar por :</label>
                 <select
@@ -83,7 +80,7 @@ function ListaTarefas() {
                     <option value="alfabetica">Ordem Alfabética</option>
                 </select>
             </div>
-            {/*Aqui é onde ele vai mostrar a nova tarefa e a data de entrega que foram adicionadas*/}
+
             <ul className="lista">
                 {tarefasOrdenadas.map((tarefa, indice) => {
                     return (
@@ -91,7 +88,6 @@ function ListaTarefas() {
                         <span>{tarefa.texto}</span>
                         <span>{tarefa.dataDeEntrega}</span>
                         <div className="botoes">
-                            {/*esse botão remove a tarefa e a data de entrega*/}
                             <button className="botaoRem" onClick={() => removerTarefa(indice)}>
                                 Remover
                             </button>
