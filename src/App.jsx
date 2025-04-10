@@ -1,11 +1,9 @@
 import ListaTarefas from "./components/ListaTarefas";
 
-import './App.css';
-
 function App() {
 
   return (
-    <div className="tudo">
+    <div>
       <h1 className="titulo">Gerenciador de Tarefas</h1>
       <ListaTarefas />
     </div>

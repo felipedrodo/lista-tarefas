@@ -1,3 +1,62 @@
-.lista{
-    color: "purple";
+body {
+    font-family: 'Arial';
+    background-color: lightcyan;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    text-align: center;
+    color: blue;
+}
+.subtitulo {
+    text-align: center;
+    color: blue;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.entrada {
+    flex: 1;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.botaoAdd {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+
+.ordenacao {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lista {
+    padding-left: 0;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eeeeee;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.botaoRem {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
 }
